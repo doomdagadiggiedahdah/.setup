@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/syncthing -no-browser
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Syncthing Server
+Name=Syncthing Server
+Comment[en_US]=Syncing service
+Comment=Syncing service

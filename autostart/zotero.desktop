@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=zotero --headless
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Zotero
+Name=Zotero
+Comment[en_US]=opens...zotero
+Comment=opens...zotero

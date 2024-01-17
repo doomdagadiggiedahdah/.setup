@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=firefox %u
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=Firefox
+Name=Firefox
+Comment[en_US]=Connection to internet
+Comment=Connection
