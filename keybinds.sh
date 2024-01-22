@@ -32,6 +32,8 @@ set_custom_keybind() {
     #fi
 }
 
+run_it() {
+    
 create_slots 12
 set_custom_keybind 1 "gigaChat" "firefox https://chat.openai.com/" "<Super>F"
 set_custom_keybind 2 "toggle Bluetooth Connection" "/home/mat/user-scripts/btPairing.sh" "<Shift><Alt>B"
@@ -46,3 +48,7 @@ set_custom_keybind 10 "perpSearch" "/home/mat/user-scripts/perplexity.search" "<
 set_custom_keybind 11 "perpSelSearch" "/home/mat/user-scripts/perplexitySel.search" "<Alt><Shift>O"
 set_custom_keybind 12 "openLink" "/home/mat/user-scripts/open_run.sh" "<Ctrl><Shift>L"
 #set_custom_keybind 13 "speech2text"
+
+}
+
+run_it
