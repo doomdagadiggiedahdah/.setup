@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=sleep 10; python /home/mat/Documents/ProgramExperiments/act_track/main.py
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=act_track
+Name=act_track
+Comment[en_US]=act_track
+Comment=act_track
