@@ -35,9 +35,9 @@ set_custom_keybind() {
 run_it() {
     
 create_slots 14
-set_custom_keybind 1 "gigaChat" "firefox https://chat.openai.com/" "<Super>F"
+set_custom_keybind 1 "gigaChat" "firefox https://chat.openai.com/" "<Super><Shift>O"
 set_custom_keybind 2 "toggle Bluetooth Connection" "/home/mat/user-scripts/btPairing.sh" "<Shift><Alt>B"
-set_custom_keybind 3 "searchPanel" "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel" "<Super>S"
+set_custom_keybind 3 "searchPanel" "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel" "<Shift><Super>S"
 set_custom_keybind 4 "gCal" "firefox https://calendar.google.com/" "<Super>C"
 set_custom_keybind 5 "new gDoc" "firefox https://docs.new/" "<Super>D"
 set_custom_keybind 6 "open Gmail" "firefox gmail.com" "<Super>G"
@@ -48,7 +48,7 @@ set_custom_keybind 10 "perpSearch" "/home/mat/user-scripts/perplexity.search" "<
 set_custom_keybind 11 "perpSelSearch" "/home/mat/user-scripts/perplexitySel.search" "<Alt><Shift>O"
 set_custom_keybind 12 "openLink" "/home/mat/user-scripts/open_run.sh" "<Ctrl><Shift>L"
 set_custom_keybind 13 "fb_mess" "firefox https://www.facebook.com/messages/" "<Super>M"
-# speech2pasteBuff
+set_custom_keybind 14 "speech2pasteBuff" "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh" "<Alt><Ctrl>R"
 
 }
 
