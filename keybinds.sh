@@ -32,9 +32,11 @@ set_custom_keybind() {
     #fi
 }
 
+## reminder: update the `create_slots` number and then add your hotkey at the key
+
 run_it() {
     
-create_slots 14
+create_slots 15
 set_custom_keybind 1 "gigaChat" "firefox https://chat.openai.com/" "<Super><Shift>O"
 set_custom_keybind 2 "toggle Bluetooth Connection" "/home/mat/user-scripts/btPairing.sh" "<Shift><Alt>B"
 set_custom_keybind 3 "searchPanel" "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel" "<Shift><Super>S"
@@ -49,7 +51,7 @@ set_custom_keybind 11 "perpSelSearch" "/home/mat/user-scripts/perplexitySel.sear
 set_custom_keybind 12 "openLink" "/home/mat/user-scripts/open_run.sh" "<Ctrl><Shift>L"
 set_custom_keybind 13 "fb_mess" "firefox https://www.facebook.com/messages/" "<Super>M"
 set_custom_keybind 14 "speech2pasteBuff" "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh" "<Alt><Ctrl>R"
-
+set_custom_keybind 15 "open FB Msgr" "firefox https://www.facebook.com/messages/" "<Super>F"
 }
 
 run_it
