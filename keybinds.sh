@@ -36,22 +36,33 @@ set_custom_keybind() {
 
 run_it() {
     
-create_slots 15
-set_custom_keybind 1 "gigaChat" "firefox https://chat.openai.com/" "<Super><Shift>O"
-set_custom_keybind 2 "toggle Bluetooth Connection" "/home/mat/user-scripts/btPairing.sh" "<Shift><Alt>B"
-set_custom_keybind 3 "searchPanel" "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel" "<Shift><Super>S"
-set_custom_keybind 4 "gCal" "firefox https://calendar.google.com/" "<Super>C"
-set_custom_keybind 5 "new gDoc" "firefox https://docs.new/" "<Super>D"
-set_custom_keybind 6 "open Gmail" "firefox gmail.com" "<Super>G"
-set_custom_keybind 7 "fleetNotes" "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/fleetWindow.sh" "<Alt><Ctrl>F"
-set_custom_keybind 8 "fact2BEEF" "/home/mat/Documents/ProgramExperiments/fact2cloze/fact2clozeBEEF.sh" "<Alt><Ctrl>C"
-set_custom_keybind 9 "ss2text" "/home/mat/Documents/ProgramExperiments/ss2txt/ss.sh" "<Ctrl><Shift>S"
-set_custom_keybind 10 "perpSearch" "/home/mat/user-scripts/perplexity.search" "<Alt><Shift>P"
-set_custom_keybind 11 "perpSelSearch" "/home/mat/user-scripts/perplexitySel.search" "<Alt><Shift>O"
-set_custom_keybind 12 "openLink" "/home/mat/user-scripts/open_run.sh" "<Ctrl><Shift>L"
-set_custom_keybind 13 "fb_mess" "firefox https://www.facebook.com/messages/" "<Super>M"
-set_custom_keybind 14 "speech2pasteBuff" "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh" "<Alt><Ctrl>R"
-set_custom_keybind 15 "open FB Msgr" "firefox https://www.facebook.com/messages/" "<Super>F"
+create_slots 40
+
+## Comms
+set_custom_keybind 1  "open FB Msgr"      "firefox https://www.facebook.com/messages/"                                    "<Super>F"
+set_custom_keybind 2  "open sms msgr"     "firefox https://messages.google.com/web/conversations"                         "<Super><Alt>X"
+set_custom_keybind 3  "open Gmail"        "https://mail.google.com/mail/u/0/"                                             "<Super>G"
+set_custom_keybind 4  "fb_mess"           "firefox https://www.facebook.com/messages/"                                    "<Super>M"
+
+## search / info
+set_custom_keybind 10  "gigaChat"          "firefox https://chat.openai.com/"                                             "<Super><Shift>O"
+set_custom_keybind 11  "searchPanel"       "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel"               "<Shift><Super>S"
+set_custom_keybind 12  "gCal"              "firefox https://calendar.google.com/"                                         "<Super>C"
+set_custom_keybind 13  "new gDoc"          "firefox https://docs.new/"                                                    "<Super>D"
+set_custom_keybind 14  "openLink"          "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_run.sh"            "<Ctrl><Shift>L"
+
+## web services
+set_custom_keybind 20  "fact2BEEF"         "/home/mat/Documents/ProgramExperiments/fact2cloze/fact2clozeBEEF.sh"          "<Alt><Ctrl>C"
+set_custom_keybind 21  "ss2text"           "/home/mat/Documents/ProgramExperiments/ss2txt/ss.sh"                          "<Ctrl><Shift>S"
+set_custom_keybind 22  "perpSearch"        "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/perplexity.search"      "<Alt><Shift>P"
+set_custom_keybind 23  "perpSelSearch"     "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/perplexitySel.search"   "<Alt><Shift>O"
+set_custom_keybind 24  "STTpb"             "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh"                 "<Alt><Ctrl>R"
+set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"           "<Super><Alt>M"
+
+## sys services
+set_custom_keybind 30  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"           "<Shift><Alt>B"
+set_custom_keybind 31  "fleetNotes"        "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/fleetWindow.sh"     "<Alt><Ctrl>F"
+
 }
 
 run_it
