@@ -40,6 +40,7 @@ run_it() {
     set_custom_keybind 2  "open sms msgr"     "firefox https://messages.google.com/web/conversations"                         "<Super><Alt>X"
     set_custom_keybind 3  "open Gmail"        "firefox https://mail.google.com/mail/u/0/"                                     "<Super>G"
     set_custom_keybind 4  "fb_mess"           "firefox https://www.facebook.com/messages/"                                    "<Super>M"
+    set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/feed/"                                       "<Super><Alt>L"
 
     ## search / info
     set_custom_keybind 10  "gigaChat"          "firefox https://chat.openai.com/"                                             "<Super><Shift>O"
@@ -55,6 +56,7 @@ run_it() {
     set_custom_keybind 23  "perpSelSearch"     "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/perplexitySel.search"   "<Alt><Shift>O"
     set_custom_keybind 24  "STTpb"             "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh"                 "<Alt><Ctrl>R"
     set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"           "<Super><Alt>M"
+    set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                          "<Super><Alt>P"
 
     ## sys services
     set_custom_keybind 30  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"           "<Shift><Alt>B"
