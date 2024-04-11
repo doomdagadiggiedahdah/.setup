@@ -1,0 +1,2 @@
+- It'd be cool to create a pop up tab that shows me all my hotkeys.
+    - If I could search them
