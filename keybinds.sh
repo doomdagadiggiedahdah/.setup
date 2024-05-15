@@ -43,7 +43,7 @@ run_it() {
     set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/feed/"                                       "<Super><Alt>L"
 
     ## search / info
-    set_custom_keybind 10  "ChattyG"           "firefox https://chat.openai.com/"                                             "<Super><Shift>O"
+    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4o"                                    "<Super><Shift>O"
     set_custom_keybind 11  "ClaudeBae"         "firefox https://claude.ai/chats"                                              "<Super><Shift>A"
     set_custom_keybind 12  "searchPanel"       "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel"               "<Shift><Super>S"
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                                         "<Super>C"
@@ -59,6 +59,7 @@ run_it() {
     set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"           "<Super><Alt>M"
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                          "<Super><Alt>P"
     set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"                          "<Super><Shift>Q"
+    set_custom_keybind 28  "2048"              "firefox https://www.2048.org/"                                                "<Super><Shift>Q"
 
     ## sys services
     set_custom_keybind 30  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"           "<Shift><Alt>B"
