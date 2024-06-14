@@ -21,10 +21,7 @@ def copy_current_url():
 
 def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
-    if '"' in quote:
-        formatted_quote = f'"""{quote}""" -[source]({url})'
-    else:
-        formatted_quote = f'"{quote}" -[source]({url})'
+    formatted_quote = f'"""{quote}""" -[source]({url})'
     return formatted_quote
 
 def main():
