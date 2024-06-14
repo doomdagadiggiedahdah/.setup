@@ -49,6 +49,7 @@ run_it() {
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                                         "<Super>C"
     set_custom_keybind 14  "new gDoc"          "firefox https://docs.new/"                                                    "<Super><Shift>D"
     set_custom_keybind 15  "openLink"          "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_run.sh"            "<Ctrl><Shift>L"
+    set_custom_keybind 16  "quote"             "python3 /home/mat/Documents/ProgramExperiments/.setup/hotkeys/quote.py"       "<Ctrl><Shift>U"
 
     ## web services
     set_custom_keybind 20  "fact2BEEF"         "/home/mat/Documents/ProgramExperiments/fact2cloze/fact2clozeBEEF.sh"          "<Alt><Ctrl>C"
@@ -60,7 +61,7 @@ run_it() {
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                          "<Super><Alt>P"
     set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"                          "<Super><Shift>Q"
     set_custom_keybind 28  "2048"              "firefox https://www.2048.org/"                                                "<Ctrl><Shift>2"
-    set_custom_keybind 29  "2048"              "firefox https://www.bodytempyoga.com/schedule"                                "<Ctrl><Shift>B"
+    set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"                                "<Ctrl><Shift>B"
 
     ## sys services
     set_custom_keybind 30  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"           "<Shift><Alt>B"
