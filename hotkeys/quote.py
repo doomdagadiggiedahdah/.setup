@@ -5,7 +5,7 @@ import time
 def clear_clipboard():
     """Clear the clipboard."""
     pyperclip.copy('')
-    time.sleep(0.3)
+    time.sleep(0.2)
 
 def copy_selected_text():
     """Copy selected text to clipboard."""
@@ -21,7 +21,11 @@ def copy_current_url():
 
 def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
-    return f'"{quote}" - [source]({url})'
+    if '"' in quote:
+        formatted_quote = f'"""{quote}""" -[source]({url})'
+    else:
+        formatted_quote = f'"{quote}" -[source]({url})'
+    return formatted_quote
 
 def main():
     clear_clipboard()
