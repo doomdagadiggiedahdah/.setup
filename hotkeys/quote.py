@@ -5,23 +5,25 @@ import time
 def clear_clipboard():
     """Clear the clipboard."""
     pyperclip.copy('')
-    time.sleep(0.2)
 
 def copy_selected_text():
     """Copy selected text to clipboard."""
+    time.sleep(0.5)
     pyautogui.hotkey('ctrl', 'c')
     return pyperclip.paste()
 
 def copy_current_url():
     """Copy the current URL from the browser."""
+    pyautogui.hotkey('i')
     pyautogui.hotkey('ctrl', 'l')
     pyautogui.hotkey('ctrl', 'c')
-    pyautogui.hotkey('fn', 'f6')
-    return pyperclip.paste()
+    pyautogui.hotkey('F6')
+    pyautogui.hotkey('Esc')
+    return pyperclip.paste().strip()
 
 def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
-    formatted_quote = f'"""{quote}""" -[source]({url})'
+    formatted_quote = f'""" {quote} """ -[source]({url})'
     return formatted_quote
 
 def main():

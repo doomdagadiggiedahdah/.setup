@@ -43,7 +43,7 @@ run_it() {
     set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/feed/"                                       "<Super><Alt>L"
 
     ## search / info
-    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4o"                                    "<Super><Shift>O"
+    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4"                                     "<Super><Shift>O"
     set_custom_keybind 11  "ClaudeBae"         "firefox https://claude.ai/chats"                                              "<Super><Shift>A"
     set_custom_keybind 12  "searchPanel"       "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel"               "<Shift><Super>S"
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                                         "<Super>C"
