@@ -32,6 +32,9 @@ set_custom_keybind() {
 run_it() {
     create_slots 50
     always_produce_link="https://docs.google.com/document/d/1_UXIxwMgg-RK79POgb7FQQQjb0CJbbKejt9iff1rhFw/edit"
+    bm_moc="https://docs.google.com/document/d/1bDyEoaQfdAqwGX_7u5Fi0FSKYEYu6MDowCbHh3Z9N4c/edit"
+    meta_models="https://docs.google.com/document/d/1N8eVUfznCSMVDWTFFRPgGXO_lPHX2VkGy8AjXCUxSwA/edit"
+    simple_stories="https://docs.google.com/document/d/1Xu0qdmn5GspPgdk7USjM30rRzHb06PK8ejsGVuYAiME/edit"
 
     ## comms
     set_custom_keybind 1  "open FB Msgr"       "firefox https://www.facebook.com/messages/"                                            "<Super>F"
@@ -41,7 +44,7 @@ run_it() {
     set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/feed/"                                                "<Super><Alt>L"
 
     ## search / info
-    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4"                                              "<Super><Shift>O"
+    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4o"                                             "<Super><Shift>O"
     set_custom_keybind 11  "ClaudeBae"         "firefox https://claude.ai/chats"                                                       "<Super><Shift>A"
     set_custom_keybind 12  "searchPanel"       "/home/mat/Documents/ProgramExperiments/searchPanel/searchPanel"                        "<Super><Shift>S"
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                                                  "<Super>C"
@@ -58,10 +61,13 @@ run_it() {
     set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                                   "<Super><Alt>P"
     set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"                                   "<Super><Shift>Q"
-    set_custom_keybind 28  "2048"              "firefox https://www.2048.org/"                                                         "<Ctrl><Shift> 2"
+    set_custom_keybind 28  "2048"              "firefox https://www.2048.org/"                                                         "<Ctrl><Shift>2"
     set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"                                         "<Ctrl><Shift>B"
 
     set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                                                          "<Super><Shift>P"
+    set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                                                       "<Super><Shift>B"
+    set_custom_keybind 32  "MM MOC"            "firefox $meta_models"                                                                  "<Super><Shift>M"
+    set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                                               "<Super><Shift>I"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"                    "<Alt><Shift>B"

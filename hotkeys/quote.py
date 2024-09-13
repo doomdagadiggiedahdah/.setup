@@ -23,8 +23,10 @@ def copy_current_url():
 
 def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
-    formatted_quote = f'""" {quote} """ -[source]({url})'
-    return formatted_quote
+    if '"' in quote:
+        return f'""" {quote} """ -[source]({url})'
+    else:
+        return f'"{quote}" -[source]({url})'
 
 def main():
     clear_clipboard()
