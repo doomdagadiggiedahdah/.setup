@@ -23,6 +23,7 @@ def copy_current_url():
 
 def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
+    quote = quote.strip("\n")
     if '"' or '"' in quote: # I'm not exactly sure why the second one is needed, but sometimes it won't return with triple quotes otherwise ¯\_(ツ)_/¯
         return f'""" {quote} """ -[source]({url})'
     else:
