@@ -31,10 +31,12 @@ set_custom_keybind() {
 
 run_it() {
     create_slots 50
+    hotkey_repo="/home/mat/Documents/ProgramExperiments/.setup/hotkeys"
     always_produce_link="https://docs.google.com/document/d/1_UXIxwMgg-RK79POgb7FQQQjb0CJbbKejt9iff1rhFw/edit"
     bm_moc="https://docs.google.com/document/d/1bDyEoaQfdAqwGX_7u5Fi0FSKYEYu6MDowCbHh3Z9N4c/edit"
     meta_models="https://docs.google.com/document/d/1N8eVUfznCSMVDWTFFRPgGXO_lPHX2VkGy8AjXCUxSwA/edit"
     simple_stories="https://docs.google.com/document/d/1Xu0qdmn5GspPgdk7USjM30rRzHb06PK8ejsGVuYAiME/edit"
+    mat_futures="https://docs.google.com/spreadsheets/d/19Te85BBTujOCuAU7CbXipE_FSW3PQUYf8J57Rh47LwU/edit?gid=0#gid=0"
 
     ## comms
     set_custom_keybind 1  "open FB Msgr"       "firefox https://www.facebook.com/messages/"                                            "<Super>F"
@@ -57,7 +59,7 @@ run_it() {
     set_custom_keybind 21  "ss2text"           "/home/mat/Documents/ProgramExperiments/ss2txt/ss.sh"                                   "<Ctrl><Shift>S"
     set_custom_keybind 22  "perpSearch"        "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/perplexity.search"               "<Alt><Shift>P"
     set_custom_keybind 23  "perpSelSearch"     "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/perplexitySel.search"            "<Alt><Shift>O"
-    set_custom_keybind 24  "STTpb"             "/home/mat/Documents/ProgramExperiments/speech2txt_hk/main.sh"                          "<Ctrl><Alt>R"
+    set_custom_keybind 24  "STTpb"             "/home/mat/Documents/ProgramExperiments/stt_hk/main.sh"                          "<Ctrl><Alt>R"
     set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                                   "<Super><Alt>P"
     set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"                                   "<Super><Shift>Q"
@@ -68,10 +70,12 @@ run_it() {
     set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                                                       "<Super><Shift>B"
     set_custom_keybind 32  "MM MOC"            "firefox $meta_models"                                                                  "<Super><Shift>M"
     set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                                               "<Super><Shift>I"
+    set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                                                  "<Super><Shift>F"
+    set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                                                          "<Super><Shift>E"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"                    "<Alt><Shift>B"
-    set_custom_keybind 41  "fleetNotes"        "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/fleetWindow.sh"              "<Ctrl><Alt>F"
+    set_custom_keybind 41  "fleetNotes"        "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/obs_fleet.sh"                "<Alt><Shift>F"
 
 }
 
