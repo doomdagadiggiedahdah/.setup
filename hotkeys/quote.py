@@ -8,7 +8,7 @@ def clear_clipboard():
 
 def copy_selected_text():
     """Copy selected text to clipboard."""
-    time.sleep(0.5)
+    time.sleep(0.01)
     pyautogui.hotkey('ctrl', 'c')
     return pyperclip.paste()
 
