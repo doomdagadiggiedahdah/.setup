@@ -2,13 +2,9 @@ import pyautogui
 import pyperclip
 import time
 
-def clear_clipboard():
-    """Clear the clipboard."""
-    pyperclip.copy('')
-
 def copy_selected_text():
     """Copy selected text to clipboard."""
-    time.sleep(0.01)
+    time.sleep(0.1)
     pyautogui.hotkey('ctrl', 'c')
     return pyperclip.paste()
 
@@ -30,7 +26,7 @@ def format_quote(quote, url):
         return f'"{quote}" -[source]({url})'
 
 def main():
-    clear_clipboard()
+    pyperclip.copy('') # clears clipboard
     selected_text = copy_selected_text()
     current_url = copy_current_url()
     formatted_text = format_quote(selected_text, current_url)
