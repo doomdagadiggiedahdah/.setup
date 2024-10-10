@@ -4,6 +4,7 @@ import time
 
 def copy_selected_text():
     """Copy selected text to clipboard."""
+    pyautogui.hotkey('Esc')
     time.sleep(0.1)
     pyautogui.hotkey('ctrl', 'c')
     return pyperclip.paste()
