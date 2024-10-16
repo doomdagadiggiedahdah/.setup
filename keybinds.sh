@@ -54,6 +54,7 @@ run_it() {
     set_custom_keybind 14  "new gDoc"          "firefox https://docs.new/"                                                             "<Super><Shift>D"
     set_custom_keybind 15  "openLink"          "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_run.sh"                     "<Ctrl><Shift>L"
     set_custom_keybind 16  "quote"             "python3 /home/mat/Documents/ProgramExperiments/.setup/hotkeys/quote.py"                "<Ctrl><Shift>U"
+    #set_custom_keybind 16  "quote"             "$sanity"                "<Ctrl><Shift>U"
 
     ## web services
     set_custom_keybind 20  "fact2BEEF"         "/home/mat/Documents/ProgramExperiments/fact2cloze/fact2clozeBEEF.sh"                   "<Ctrl><Alt>C"
@@ -73,6 +74,7 @@ run_it() {
     set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                                               "<Super><Shift>I"
     set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                                                  "<Super><Shift>F"
     set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                                                           "<Super><Shift>E"
+    set_custom_keybind 36  "stt_transform"     "/home/mat/Documents/ProgramExperiments/stt_transform/hotkey.sh"                        "<Super><Shift>T"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"                    "<Alt><Shift>B"
