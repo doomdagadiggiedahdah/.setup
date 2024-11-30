@@ -33,11 +33,14 @@ run_it() {
     create_slots 50
     hotkey_repo="/home/mat/Documents/ProgramExperiments/.setup/hotkeys"
     sanity="python $hotkey_repo/sanity.py"
+
     always_produce_link="https://docs.google.com/document/d/1_UXIxwMgg-RK79POgb7FQQQjb0CJbbKejt9iff1rhFw/edit"
+    mat_futures="https://docs.google.com/document/d/1ZXz8kJIjnlPtkrub37TRF6U-DyT-34QOk1oyvxERl0k/edit?tab=t.0"
+
     bm_moc="https://docs.google.com/document/d/1bDyEoaQfdAqwGX_7u5Fi0FSKYEYu6MDowCbHh3Z9N4c/edit"
     meta_models="https://docs.google.com/document/d/1N8eVUfznCSMVDWTFFRPgGXO_lPHX2VkGy8AjXCUxSwA/edit"
     simple_stories="https://docs.google.com/document/d/1Xu0qdmn5GspPgdk7USjM30rRzHb06PK8ejsGVuYAiME/edit"
-    mat_futures="https://docs.google.com/spreadsheets/d/19Te85BBTujOCuAU7CbXipE_FSW3PQUYf8J57Rh47LwU/edit?gid=0#gid=0"
+    csp_moc="https://hackmd.io/cJGD336CTIKO5x3xZmxftQ"
 
     ## comms
     set_custom_keybind 1  "open FB Msgr"       "firefox https://www.facebook.com/messages/"                                            "<Super>F"
@@ -65,7 +68,7 @@ run_it() {
     set_custom_keybind 25  "open maps"         "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                                                   "<Super><Alt>P"
     set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"                                   "<Super><Shift>Q"
-    set_custom_keybind 28  "2048"              "firefox https://www.2048.org/"                                                         "<Ctrl><Shift>2"
+    set_custom_keybind 28  "2048"              "firefox https://play2048.co/"                                                          "<Ctrl><Shift>2"
     set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"                                         "<Ctrl><Shift>B"
 
     set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                                                          "<Super><Shift>P"
@@ -75,9 +78,10 @@ run_it() {
     set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                                                  "<Super><Shift>F"
     set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                                                           "<Super><Shift>E"
     set_custom_keybind 36  "stt_transform"     "/home/mat/Documents/ProgramExperiments/stt_transform/hotkey.sh"                        "<Super><Shift>T"
+    set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                                                      "<Super><Shift>C"
 
     ## sys services
-    set_custom_keybind 40  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"                    "<Alt><Shift>B"
+    set_custom_keybind 40  "toggle Bluetooth"  "/home/mat/Documents/ProgramExperiments/.setup/hotkeys/btPairing.sh"         "<Alt><Shift>B"
     set_custom_keybind 41  "fleetNotes"        "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"
 
 }
