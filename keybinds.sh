@@ -31,7 +31,7 @@ set_custom_keybind() {
 
 run_it() {
     create_slots 50
-    prgm_repo="$prgm_repo"
+    prgm_repo="/home/mat/Documents/ProgramExperiments"
     hotkey_repo="$prgm_repo/.setup/hotkeys"
     sanity="python $hotkey_repo/sanity.py"
 
