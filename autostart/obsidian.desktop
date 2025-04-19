@@ -1,10 +1,8 @@
 [Desktop Entry]
 Type=Application
-Exec=/opt/Obsidian/obsidian %U
+Exec=obsidian
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
-Name[en_US]=Obsidian
-Name=Obsidian
-Comment[en_US]=Notes
-Comment=Notes
+Name=obsidian
+Comment=yep

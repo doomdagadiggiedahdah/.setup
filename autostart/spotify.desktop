@@ -1,10 +1,8 @@
 [Desktop Entry]
 Type=Application
-Exec=/snap/bin/spotify
+Exec=spotify
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
-Name[en_US]=Spotify
 Name=Spotify
-Comment[en_US]=opens...spotify
-Comment=opens...spotify
+Comment=Auto-start Spotify music player

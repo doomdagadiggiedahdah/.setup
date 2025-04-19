@@ -21,12 +21,10 @@ set_custom_keybind() {
     local command=$3
     local bind=$4
 
-	echo "binding $name to $bind..."
+    echo "binding $name to $bind..."
     gsettings set "${MEDIA_KEYS}.custom-keybinding:${KEYBIND_DIR}/custom${index}/" name "${name}"
     gsettings set "${MEDIA_KEYS}.custom-keybinding:${KEYBIND_DIR}/custom${index}/" command "${command}"
     gsettings set "${MEDIA_KEYS}.custom-keybinding:${KEYBIND_DIR}/custom${index}/" binding "${bind}"
-
-    #fi
 }
 
 run_it() {
@@ -57,33 +55,34 @@ run_it() {
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                      "<Super>C"
     set_custom_keybind 14  "new gDoc"          "firefox https://docs.new/"                                 "<Super><Shift>D"
     set_custom_keybind 15  "openLink"          "$prgm_repo/.setup/hotkeys/open_run.sh"                     "<Ctrl><Shift>L"
-    set_custom_keybind 16  "quote"             "python3 $prgm_repo/.setup/hotkeys/quote.py"                "<Ctrl><Shift>U"
+    set_custom_keybind 16  "quote"             "$prgm_repo/.setup/hotkeys/run_quote.sh"                    "<Ctrl><Shift>U"
 
     ## web services
-    set_custom_keybind 20  "fact2BEEF"         "$prgm_repo/fact2cloze/fact2clozeBEEF.sh"                   "<Ctrl><Alt>C"
+    set_custom_keybind 20  "fact2BEEF"         "$prgm_repo/fact2cloze/fact2clozeBEEF.sh"                   "<Ctrl><Alt>C" # TODO:
     set_custom_keybind 21  "ss2text"           "$prgm_repo/ss2txt/ss.sh"                                   "<Ctrl><Shift>S"
     set_custom_keybind 22  "perpSearch"        "$prgm_repo/.setup/hotkeys/perplexity.search"               "<Alt><Shift>P"
     set_custom_keybind 23  "perpSelSearch"     "$prgm_repo/.setup/hotkeys/perplexitySel.search"            "<Alt><Shift>O"
     set_custom_keybind 24  "STTpb"             "$prgm_repo/stt_hk/main.sh"                                 "<Ctrl><Alt>R"
-    set_custom_keybind 25  "open maps"         "$prgm_repo/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
+    #set_custom_keybind 25  "open maps"         "$prgm_repo/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
     set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                       "<Super><Alt>P"
-    set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=CKAc3nYEatw"       "<Super><Shift>Q"
+    set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=SIQ3DfHrd60"       "<Super><Shift>Q"
     set_custom_keybind 28  "2048"              "firefox https://play2048.co/"                              "<Ctrl><Shift>2"
     set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"             "<Ctrl><Shift>B"
 
-    set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                              "<Super><Shift>P"
-    set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                           "<Super><Shift>B"
-    set_custom_keybind 32  "MM MOC"            "firefox $meta_models"                                      "<Super><Shift>M"
-    set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                   "<Super><Shift>I"
-    set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                      "<Super><Shift>F"
-    set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                               "<Super><Shift>E"
-    set_custom_keybind 36  "stt_transform"     "$prgm_repo/stt_transform/hotkey.sh"                        "<Super><Shift>T"
-    set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                          "<Super><Shift>C"
+    #set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                              "<Super><Shift>P"
+    #set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                           "<Super><Shift>B"
+    #set_custom_keybind 32  "MM MOC"            "firefox $meta_models"                                      "<Super><Shift>M"
+    #set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                   "<Super><Shift>I"
+    #set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                      "<Super><Shift>F"
+    #set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                               "<Super><Shift>E"
+    #set_custom_keybind 36  "stt_transform"     "$prgm_repo/stt_transform/hotkey.sh"                        "<Super><Shift>T"
+    #set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                          "<Super><Shift>C"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "$prgm_repo/.setup/hotkeys/btPairing.sh"         	   "<Alt><Shift>B"
-    set_custom_keybind 41  "fleetNotes"        "$prgm_repo/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"
+    #set_custom_keybind 41  "fleetNotes"        "$prgm_repo/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"
     set_custom_keybind 42  "slow_drip"         "$prgm_repo/slow_drip/hk_quick_capture.fish"                "<Ctrl><Alt>S"
+    #set_custom_keybind 43  "amv_engage"        "$prgm_repo/.setup/amv_engage.sh"                 	   "<Ctrl><Alt>A"
 
 }
 
