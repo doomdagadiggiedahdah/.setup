@@ -28,6 +28,4 @@ mkdir -p ~/.config/kitty
 ln -sf "$REPO_DIR/configs/fish/config.fish" ~/.config/fish/config.fish
 ln -sf "$REPO_DIR/configs/kitty/kitty.conf" ~/.config/kitty/kitty.conf
 
-echo "✓ Fish config symlinked"
-echo "✓ Kitty config symlinked"
-echo "Done! Restart your terminal for changes to take effect."
+echo "✓ configs symlinked"

@@ -41,6 +41,8 @@ run_it() {
     simple_stories="https://docs.google.com/document/d/1Xu0qdmn5GspPgdk7USjM30rRzHb06PK8ejsGVuYAiME/edit"
     csp_moc="https://hackmd.io/cJGD336CTIKO5x3xZmxftQ"
 
+    lazy_hack="https://docs.google.com/document/d/1oN9MB1c3cJ59J4RwDZ0aV0bThsvSC-Zk20T0Ak2lCzY/edit?tab=t.0"
+
     ## comms
     set_custom_keybind 1  "open FB Msgr"       "firefox https://www.facebook.com/messages/"                "<Super>F"
     set_custom_keybind 2  "open sms msgr"      "firefox https://messages.google.com/web/conversations"     "<Super><Alt>X"
@@ -58,7 +60,8 @@ run_it() {
     set_custom_keybind 16  "quote"             "$prgm_repo/.setup/hotkeys/run_quote.sh"                    "<Ctrl><Shift>U"
 
     ## web services
-    set_custom_keybind 20  "fact2BEEF"         "$prgm_repo/fact2cloze/fact2clozeBEEF.sh"                   "<Ctrl><Alt>C" # TODO:
+    set_custom_keybind 20  "fact2BEEF"         "$prgm_repo/fact2cloze/fact2clozeBEEF.sh"                   "<Ctrl><Shift>F"
+    #set_custom_keybind 20  "fact2BEEF"         "$sanity"                   "<Ctrl><Shift>C"
     set_custom_keybind 21  "ss2text"           "$prgm_repo/ss2txt/ss.sh"                                   "<Ctrl><Shift>S"
     set_custom_keybind 22  "perpSearch"        "$prgm_repo/.setup/hotkeys/perplexity.search"               "<Alt><Shift>P"
     set_custom_keybind 23  "perpSelSearch"     "$prgm_repo/.setup/hotkeys/perplexitySel.search"            "<Alt><Shift>O"
@@ -77,6 +80,7 @@ run_it() {
     #set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                               "<Super><Shift>E"
     #set_custom_keybind 36  "stt_transform"     "$prgm_repo/stt_transform/hotkey.sh"                        "<Super><Shift>T"
     #set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                          "<Super><Shift>C"
+    set_custom_keybind 38  "lazy hack"          "firefox $lazy_hack"                                        "<Super><Shift>H"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "$prgm_repo/.setup/hotkeys/btPairing.sh"         	   "<Alt><Shift>B"
