@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # run "bluetoothctl" to find the MAC address of your device.
-MAC="40:72:18:EA:9D:D4"
+MAC="80:C3:BA:7B:5E:70"
 
 if hcitool con | grep -q "$MAC"
 then
