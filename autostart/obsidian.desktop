@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Exec=obsidian
+Exec=obsidian --enable-unsafe-webgpu --enable-features=Vulkan
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name=obsidian
-Comment=yep
+Comment=yep; now with wbgpy / vulkan
