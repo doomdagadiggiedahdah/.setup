@@ -33,7 +33,7 @@ run_it() {
     hotkey_repo="$prgm_repo/.setup/hotkeys"
     sanity="python $hotkey_repo/sanity.py"
 
-    always_produce_link="https://docs.google.com/document/d/1_UXIxwMgg-RK79POgb7FQQQjb0CJbbKejt9iff1rhFw/edit"
+    always_produce_link="https://docs.google.com/document/d/1E4RXWmt0ndFW-L12ab7JYt1FXSdSlEB9w7Q7dkitIMw/edit?tab=t.0"
     mat_futures="https://docs.google.com/document/d/1ZXz8kJIjnlPtkrub37TRF6U-DyT-34QOk1oyvxERl0k/edit?tab=t.0"
 
     bm_moc="https://docs.google.com/document/d/1bDyEoaQfdAqwGX_7u5Fi0FSKYEYu6MDowCbHh3Z9N4c/edit"
@@ -72,21 +72,22 @@ run_it() {
     set_custom_keybind 28  "2048"              "firefox https://play2048.co/"                              "<Ctrl><Shift>2"
     set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"             "<Ctrl><Shift>B"
 
-    #set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                              "<Super><Shift>P"
+    set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                              "<Super><Shift>P"
     #set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                           "<Super><Shift>B"
     #set_custom_keybind 32  "MM MOC"            "firefox $meta_models"                                      "<Super><Shift>M"
     #set_custom_keybind 33  "SS MOC"            "firefox $simple_stories"                                   "<Super><Shift>I"
     #set_custom_keybind 34  "Mat Futures"       "firefox $mat_futures"                                      "<Super><Shift>F"
     #set_custom_keybind 35  "obs_perp_search"   "$hotkey_repo/obs_perp_hk.sh"                               "<Super><Shift>E"
     #set_custom_keybind 36  "stt_transform"     "$prgm_repo/stt_transform/hotkey.sh"                        "<Super><Shift>T"
-    #set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                          "<Super><Shift>C"
+    set_custom_keybind 37  "csp MOC"           "firefox $csp_moc"                                          "<Super><Shift>C"
     set_custom_keybind 38  "lazy hack"          "firefox $lazy_hack"                                        "<Super><Shift>H"
 
     ## sys services
     set_custom_keybind 40  "toggle Bluetooth"  "$prgm_repo/.setup/hotkeys/btPairing.sh"         	   "<Alt><Shift>B"
     #set_custom_keybind 41  "fleetNotes"        "$prgm_repo/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"
     set_custom_keybind 42  "slow_drip"         "$prgm_repo/slow_drip/hk_quick_capture.fish"                "<Ctrl><Alt>S"
-    #set_custom_keybind 43  "amv_engage"        "$prgm_repo/.setup/amv_engage.sh"                 	   "<Ctrl><Alt>A"
+    set_custom_keybind 43  "picture_browser"   "$hotkey_repo/picture_browser.sh"                           "<Super><Shift>R"
+    #set_custom_keybind 44  "amv_engage"        "$prgm_repo/.setup/amv_engage.sh"                 	   "<Ctrl><Alt>A"
 
 }
 
