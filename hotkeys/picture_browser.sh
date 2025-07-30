@@ -28,11 +28,11 @@ open_pictures() {
     
     if [ -n "$pic_dir" ]; then
         # Open the directory in ranger
-        kitty --hold ranger "$pic_dir"
+        kitty ranger "$pic_dir"
     else
         # If no recent pictures found, show notification and open main directory
         notify-send "Picture Browser" "No pictures found for $label. Opening main directory."
-        kitty --hold ranger "$PICTURES_DIR"
+        kitty ranger "$PICTURES_DIR"
     fi
 }
 

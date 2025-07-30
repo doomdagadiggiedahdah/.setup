@@ -1,0 +1,33 @@
+configuration {
+    modi: "drun,run,window,ssh";
+    font: "Fira";
+    display-drun: "[nord | Fira | width]";
+    show-icons: true;
+}
+
+* {
+    bg: #2E3440; fg: #ECEFF4; accent: #88C0D0;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+window {
+    width: 800px;
+}
+
+listview {
+    lines: 6;
+    columns: 1;
+    fixed-height: false;
+}
+
+element {
+    padding: 8 12;
+    spacing: 8px;
+    border-radius: 3px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
