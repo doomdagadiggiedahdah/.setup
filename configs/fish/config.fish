@@ -51,22 +51,14 @@ alias edfish='vim /home/mat/.config/fish/config.fish; source /home/mat/.config/f
 alias edkitty='vim .config/kitty/kitty.conf; kitty @ load-config'
 alias edhk='vim /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh; /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh'
 
-# git stuff
-abbr -a gs 'git status'
-abbr -a ga 'git add'
-abbr -a gc 'git commit'
-abbr -a gp 'git push'
-abbr -a gl 'git log'
-abbr -a gd 'git diff'
-abbr -a gco 'git checkout'
-abbr -a gb 'git branch'
-
-set -gx EDITOR "nvim"
-
+# path
 fish_add_path -a /home/mat/.foundry/bin
 fish_add_path -a /home/mat/.npm-global/bin
 fish_add_path -g /usr/local/go/bin
 fish_add_path -g ~/.local/bin/
+
+# editor
+set -gx EDITOR "nvim"
 
 if [ -f '/home/mat/google-cloud-sdk/path.fish.inc' ]; . '/home/mat/google-cloud-sdk/path.fish.inc'; end
 set -gx PATH /usr/local/go/bin $PATH

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+site="https://www.perplexity.ai/?q=what is a "
+
+#xclip -out -selection primary | xclip -in -selection clipboard
+buffer=$(xclip -o -selection primary)
+
+firefox "$site$buffer"

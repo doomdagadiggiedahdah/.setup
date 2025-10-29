@@ -1,0 +1,8 @@
+#!/bin/bash
+
+site="https://www.perplexity.ai/?q="
+
+question=$(zenity --text='' --title="Perplexity.ai" --entry)
+if [ -n "$question" ]; then
+	firefox "$site$question&focus=internet"
+fi
