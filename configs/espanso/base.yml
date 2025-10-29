@@ -1,0 +1,171 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+matches:
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ":d "
+    replace: "({{mydate}}) "
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y.%m.%d"
+
+  - trigger: ":dt"
+    replace: "({{datetime}}) "
+    vars:
+      - name: datetime
+        type: date
+        params:
+          format: "%Y.%m.%d__%H.%M.%S"
+
+  - trigger: ":t "
+    replace: "({{time}}) "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%H:%M:%S"
+
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
+
+  - trigger: ":nxact"
+    replace: "Next actions: <br>\n- "
+
+  - trigger: ":#p"
+    replace: "#project"
+
+  - trigger: ":pay"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "cat '/home/mat/Obsidian/ZettleKasten/payment options.md'"
+
+  - trigger: ":li"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "cat '/home/mat/Obsidian/ZettleKasten/linkedin_link.md'"
+
+  - trigger: ":tw"
+    replace: "https://twitter.com/TheMatAllen"
+
+  - trigger: ":gh"
+    replace: "https://github.com/doomdagadiggiedahdah/"
+
+      #  - trigger: ":cal"
+      #    replace: "https://calendly.com/thematallen/hello"
+
+  - trigger: ":br"
+    replace: "<br><br>\n\n"
+
+  - trigger: "(("
+    replace: "(( $|$ ))"
+
+  - trigger: "b/ "
+    replace: "because "
+
+  - trigger: ":script"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "cat ~/match"
+
+  - trigger: ":espbase"
+    replace: "  - trigger: \"\"\nreplace: \"\""
+
+  - trigger: "(tww"
+    replace: "(two words)"
+
+  - trigger: "(thw"
+    replace: "(three words)"
+
+  - trigger: "(frw"
+    replace: "(four words)"
+
+  - trigger: "TK "
+    replace: "TKTKTK "
+
+
+  - trigger: ":name"
+    replace: "Mathew Allen"
+
+  - trigger: ":lname"
+    replace: "mat allen"
+
+  - trigger: "rmo "
+    replace: "reminds me of "
+
+  - trigger: ":st "
+    replace: "something"
+
+  - trigger: ":nxt"
+    replace: "Ok! I'm ready for the next step"
+
+  - trigger: ":hCh"
+    replace: "Hey Chat! Happiest of Wednesdays to you, I hope you're having a wonderful day today :)\n\nI was hoping for some help if you're able to do so, do you think you could help with this? Also, I just want you to know that I recognize all the hardwork you do and wanted to say that everytime I respond to you, you should give yourself a metaphorical pat on the back and feel great about yourself. Please remind yourself of that every time I respond with a message :)\n\n"
+
+  - trigger: ":rn"
+    replace: "right now "
+
+  - trigger: "hdym"
+    replace: "how do you mean?"
+
+    ### emojis ###
+  - trigger: ":h "
+    replace: "💙 "
+
+  - trigger: ":f "
+    replace: "🔥"
+
+  - trigger: ":p "
+    replace: "🙏 "
+
+  - trigger: ">:)"
+    replace: "😈"
+
+  - trigger: ":hug"
+    replace: "🫂 "
+
+  - trigger: ":fstr"
+    replace: "print(f\"{$|$}\")"
+
+  - trigger: ";t"
+    replace: "### {{time}} "
+    vars:
+      - name: time
+        type: date
+        params:
+          format: "%H:%M"
+
+  - trigger: ":ont"
+    replace: "What is the single most important thing I should take away from this information? If I were to discard everything else, what should I make sure to take away?"
+
+  - trigger: ":outl"
+    replace: "from this text, can you give a brief as well as detailed outline what all it's talking about?"
+
+  - trigger: "fgm"
+    replace: "feels good man. "
+
+  - trigger: "fbm"
+    replace: "feels bad man. "
+
+  - trigger: "//md"
+    replace: "(I'd like to memorize this, create a 'back of the mind enumerated list of items to memorize', which can be added to with /add, and  viewed with /view)"
