@@ -83,6 +83,7 @@ run_it() {
     set_custom_keybind 38  "lazy hack"          "firefox $lazy_hack"                                        "<Super><Shift>H"
 
     ## sys services
+    set_custom_keybind 39  "simple notification" "$hotkey_repo/simple_notification.sh"     	           "<Super><Alt>Space"
     set_custom_keybind 40  "toggle Bluetooth"  "$prgm_repo/.setup/hotkeys/btPairing.sh"         	   "<Alt><Shift>B"
     set_custom_keybind 41  "toggle Kinesis"    "$prgm_repo/.setup/hotkeys/btKinesis.sh"                     "<Alt><Shift>K"
     #set_custom_keybind 42  "fleetNotes"        "$prgm_repo/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"

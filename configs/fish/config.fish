@@ -37,18 +37,29 @@ end
 alias obs_snip='cd /home/mat/Obsidian/.obsidian/snippets/'
 alias pm='python3 main.py'
 alias vmm='vim main.py'
-#/home/mat/.config/fish/config.fish
-alias edfish='vim /home/mat/.config/fish/config.fish; source /home/mat/.config/fish/config.fish'
-alias edkitty='vim .config/kitty/kitty.conf; kitty @ load-config'
 alias spot='a=$(pwd)'
-alias keybinds='vim /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh; /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh'
 alias vim='nvim'
 alias ee='espanso edit'
 alias ss='source .venv/bin/activate.fish'
 alias deacc='deactivate'
 alias blg='cd ~/Documents/blogg/'
 alias obss='cd /home/mat/Documents/obsidian_setup'
+alias pics='cd /home/mat/Pictures/onePlis_Camera/Camera'
 
+# edit configs
+alias edfish='vim /home/mat/.config/fish/config.fish; source /home/mat/.config/fish/config.fish'
+alias edkitty='vim .config/kitty/kitty.conf; kitty @ load-config'
+alias edhk='vim /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh; /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh'
+
+# git stuff
+abbr -a gs 'git status'
+abbr -a ga 'git add'
+abbr -a gc 'git commit'
+abbr -a gp 'git push'
+abbr -a gl 'git log'
+abbr -a gd 'git diff'
+abbr -a gco 'git checkout'
+abbr -a gb 'git branch'
 
 set -gx EDITOR "nvim"
 
@@ -59,3 +70,5 @@ fish_add_path -g ~/.local/bin/
 
 if [ -f '/home/mat/google-cloud-sdk/path.fish.inc' ]; . '/home/mat/google-cloud-sdk/path.fish.inc'; end
 set -gx PATH /usr/local/go/bin $PATH
+alias newest='ls -t | head -1'
+
