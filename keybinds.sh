@@ -44,18 +44,18 @@ run_it() {
     lazy_hack="https://docs.google.com/document/d/1oN9MB1c3cJ59J4RwDZ0aV0bThsvSC-Zk20T0Ak2lCzY/edit?tab=t.0"
 
     ## comms
-    set_custom_keybind 1  "open FB Msgr"       "firefox https://www.facebook.com/messages/"                "<Super>F"
-    set_custom_keybind 2  "open sms msgr"      "firefox https://messages.google.com/web/conversations"     "<Super><Alt>X"
-    set_custom_keybind 3  "open Gmail"         "firefox https://mail.google.com/mail/u/0/"                 "<Super>G"
-    set_custom_keybind 4  "fb_mess"            "firefox https://www.facebook.com/messages/"                "<Super>M"
-    set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/in/mat-allen-2bbb251b1/"  "<Super><Alt>L"
+    set_custom_keybind 1  "open FB Msgr"       "firefox -new-tab https://www.facebook.com/messages/"                "<Super>F"
+    set_custom_keybind 2  "open sms msgr"      "firefox -new-tab https://messages.google.com/web/conversations"     "<Super><Alt>X"
+    set_custom_keybind 3  "open Gmail"         "firefox -new-tab https://mail.google.com/mail/u/0/"                 "<Super>G"
+    set_custom_keybind 4  "fb_mess"            "firefox -new-tab https://www.facebook.com/messages/"                "<Super>M"
+    set_custom_keybind 5  "linkedin"           "firefox -new-tab https://www.linkedin.com/in/mat-allen-2bbb251b1/"  "<Super><Alt>L"
 
     ## search / info
-    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/"                 		   "<Super><Shift>O"
-    set_custom_keybind 11  "ClaudeBae"         "firefox https://claude.ai/chats"                           "<Super><Shift>A"
+    set_custom_keybind 10  "ChattyG"           "firefox -new-tab https://chatgpt.com/"                 		   "<Super><Shift>O"
+    set_custom_keybind 11  "ClaudeBae"         "firefox -new-tab https://claude.ai/chats"                           "<Super><Shift>A"
     set_custom_keybind 12  "searchPanel"       "$prgm_repo/searchPanel/searchPanel"                        "<Super><Shift>S"
-    set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                      "<Super>C"
-    set_custom_keybind 14  "new gDoc"          "firefox https://docs.new/"                                 "<Super><Shift>D"
+    set_custom_keybind 13  "gCal"              "firefox -new-tab https://calendar.google.com/"                      "<Super>C"
+    set_custom_keybind 14  "new gDoc"          "firefox -new-tab https://docs.new/"                                 "<Super><Shift>D"
     set_custom_keybind 15  "openLink"          "$prgm_repo/.setup/hotkeys/open_run.sh"                     "<Ctrl><Shift>L"
     set_custom_keybind 16  "quote"             "$prgm_repo/.setup/hotkeys/run_quote.sh"                    "<Ctrl><Shift>U"
 
@@ -67,10 +67,10 @@ run_it() {
     set_custom_keybind 23  "perpSelSearch"     "$prgm_repo/.setup/hotkeys/perplexitySel.search"            "<Alt><Shift>O"
     set_custom_keybind 24  "STTpb"             "$prgm_repo/stt_hk/main.sh"                                 "<Ctrl><Alt>R"
     #set_custom_keybind 25  "open maps"         "$prgm_repo/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
-    set_custom_keybind 26  "open partiful"     "firefox https://partiful.com/events"                       "<Super><Alt>P"
-    set_custom_keybind 27  "aquatic ambi"      "firefox https://www.youtube.com/watch?v=SIQ3DfHrd60"       "<Super><Shift>Q"
-    set_custom_keybind 28  "2048"              "firefox https://play2048.co/"                              "<Ctrl><Shift>2"
-    set_custom_keybind 29  "yoga"              "firefox https://www.bodytempyoga.com/schedule"             "<Ctrl><Shift>B"
+    set_custom_keybind 26  "open partiful"     "firefox -new-tab https://partiful.com/events"                       "<Super><Alt>P"
+    set_custom_keybind 27  "aquatic ambi"      "firefox -new-tab https://www.youtube.com/watch?v=SIQ3DfHrd60"       "<Super><Shift>Q"
+    set_custom_keybind 28  "2048"              "firefox -new-tab https://play2048.co/"                              "<Ctrl><Shift>2"
+    set_custom_keybind 29  "yoga"              "firefox -new-tab https://www.bodytempyoga.com/schedule"             "<Ctrl><Shift>B"
 
     set_custom_keybind 30  "Always produce"    "firefox $always_produce_link"                              "<Super><Shift>P"
     #set_custom_keybind 31  "Slutty mic MOC"    "firefox $bm_moc"                                           "<Super><Shift>B"
