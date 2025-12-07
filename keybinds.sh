@@ -48,10 +48,10 @@ run_it() {
     set_custom_keybind 2  "open sms msgr"      "firefox https://messages.google.com/web/conversations"     "<Super><Alt>X"
     set_custom_keybind 3  "open Gmail"         "firefox https://mail.google.com/mail/u/0/"                 "<Super>G"
     set_custom_keybind 4  "fb_mess"            "firefox https://www.facebook.com/messages/"                "<Super>M"
-    set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/in/mat-allen-2bbb251b1/"                    "<Super><Alt>L"
+    set_custom_keybind 5  "linkedin"           "firefox https://www.linkedin.com/in/mat-allen-2bbb251b1/"  "<Super><Alt>L"
 
     ## search / info
-    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/?model=gpt-4o"                 "<Super><Shift>O"
+    set_custom_keybind 10  "ChattyG"           "firefox https://chatgpt.com/"                 		   "<Super><Shift>O"
     set_custom_keybind 11  "ClaudeBae"         "firefox https://claude.ai/chats"                           "<Super><Shift>A"
     set_custom_keybind 12  "searchPanel"       "$prgm_repo/searchPanel/searchPanel"                        "<Super><Shift>S"
     set_custom_keybind 13  "gCal"              "firefox https://calendar.google.com/"                      "<Super>C"
@@ -85,7 +85,7 @@ run_it() {
     ## sys services
     set_custom_keybind 39  "simple notification" "$hotkey_repo/simple_notification.sh"     	           "<Super><Alt>Space"
     set_custom_keybind 40  "toggle Bluetooth"  "$prgm_repo/.setup/hotkeys/btPairing.sh"         	   "<Alt><Shift>B"
-    set_custom_keybind 41  "toggle Kinesis"    "$prgm_repo/.setup/hotkeys/btKinesis.sh"                     "<Alt><Shift>K"
+    set_custom_keybind 41  "toggle Kinesis"    "$prgm_repo/.setup/hotkeys/btKinesis.sh"                    "<Alt><Shift>K"
     #set_custom_keybind 42  "fleetNotes"        "$prgm_repo/fleetingNotes/main/obs_fleet.sh"                "<Ctrl><Alt>F"
     set_custom_keybind 44  "slow_drip"         "$prgm_repo/slow_drip/hk_quick_capture.fish"                "<Ctrl><Alt>S"
     set_custom_keybind 45  "picture_browser"   "$hotkey_repo/picture_browser.sh"                           "<Super><Shift>R"
