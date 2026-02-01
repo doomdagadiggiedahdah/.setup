@@ -93,7 +93,7 @@ def format_quote(quote, url):
     """Format the quote and URL into a markdown string."""
     quote = quote.strip("\n")
     if '"' in quote:
-        formatted_text = f'""" {quote} """ -[source]({url})'
+        formatted_text = f"''' {quote} ''' -[source]({url})"
     else:
         formatted_text = f'"{quote}" -[source]({url})'
 
