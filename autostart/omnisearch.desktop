@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=OmniSearch
+Comment=Start self-hosted OmniSearch metasearch engine
+Exec=docker-compose -f /home/mat/Documents/ProgramExperiments/omnisearch/docker-compose.yml up -d
+Terminal=false
+Type=Application
+Keywords=search;metasearch;
+Categories=Network;

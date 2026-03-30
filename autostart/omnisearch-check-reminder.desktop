@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=OmniSearch Check Reminder
+Comment=One-time reminder to verify OmniSearch is up after login. Remove with: rm ~/.config/autostart/omnisearch-check-reminder.desktop
+Exec=bash -c 'sleep 15 && notify-send "OmniSearch" "Should be up! Test it via searchPanel (omniSearch or omniSearch-img). To stop this reminder: rm ~/.config/autostart/omnisearch-check-reminder.desktop" --icon=web-browser --urgency=normal'
+Terminal=false
+Type=Application
