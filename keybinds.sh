@@ -66,7 +66,7 @@ run_it() {
   set_custom_keybind 21 "ss2text" "$prgm_repo/ss2txt/ss.sh" "<Ctrl><Shift>S"
   set_custom_keybind 22 "perpSearch" "$prgm_repo/.setup/hotkeys/perplexity.search" "<Alt><Shift>P"
   set_custom_keybind 23 "perpSelSearch" "$prgm_repo/.setup/hotkeys/perplexitySel.search" "<Alt><Shift>O"
-  set_custom_keybind 24 "STTpb" "$prgm_repo/stt_hk/main.sh" "<Ctrl><Alt>R"
+  set_custom_keybind 24 "STTpb" "fish -c 'source /home/mat/.config/.api_keys; $prgm_repo/stt_hk/main.sh >> /tmp/stt_hk.log 2>&1'" "<Ctrl><Alt>R"
   #set_custom_keybind 25  "open maps"         "$prgm_repo/.setup/hotkeys/open_maps.sh"                    "<Super><Alt>M"
   set_custom_keybind 26 "open partiful" "firefox -new-tab https://partiful.com/events" "<Super><Alt>P"
   set_custom_keybind 27 "aquatic ambi" "firefox -new-tab https://www.youtube.com/watch?v=SIQ3DfHrd60" "<Super><Shift>Q"
