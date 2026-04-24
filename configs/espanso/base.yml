@@ -7,6 +7,7 @@
 
 # Matches are substitution rules: when you type the "trigger" string
 # it gets replaced by the "replace" string.
+# 
 
 matches:
   # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
@@ -19,7 +20,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%Y.%m.%d"
+          format: "%Y-%m-%d"
 
   - trigger: ":dt"
     replace: "({{datetime}}) "
@@ -27,7 +28,7 @@ matches:
       - name: datetime
         type: date
         params:
-          format: "%Y.%m.%d__%H.%M.%S"
+          format: "%Y-%m-%d__%H:%M:%S"
 
   - trigger: ":t "
     replace: "({{time}}) "
@@ -147,8 +148,16 @@ matches:
   - trigger: ":fstr"
     replace: "print(f\"{$|$}\")"
 
+  - trigger: ";d"
+    replace: "## {{mydate}} "
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
   - trigger: ";t"
-    replace: "### {{time}} "
+    replace: "### {{time}} - \n- "
     vars:
       - name: time
         type: date
@@ -169,3 +178,6 @@ matches:
 
   - trigger: "//md"
     replace: "(I'd like to memorize this, create a 'back of the mind enumerated list of items to memorize', which can be added to with /add, and  viewed with /view)"
+
+  - trigger: "---"
+    replace: "---\n- "

@@ -1,16 +1,26 @@
 if status is-interactive
-	#  and not set -q TMUX
-	#  exec tmux
+    #  and not set -q TMUX
+    #  exec tmux
 end
 
 set -x PATH $HOME/.local/bin $PATH
 
+# Add ~/bin to PATH (for user-level binaries like arduino-cli)
+fish_add_path $HOME/bin
+
+# Claude Code performance fix - disable telemetry and error reporting
+set -gx DISABLE_TELEMETRY 1
+set -gx DISABLE_ERROR_REPORTING 1
+
+# Claude Code debug mode
+set -gx CLAUDE_CODE_DEBUG 1
+
 # load api keys
 if test -f ~/.config/.api_keys
-	source ~/.config/.api_keys
+    source ~/.config/.api_keys
 end
 
-set prgm "/home/mat/Documents/ProgramExperiments/fleetingNotes/main/"
+set prgm /home/mat/Documents/ProgramExperiments/fleetingNotes/main/
 
 
 
@@ -45,9 +55,13 @@ alias deacc='deactivate'
 alias blg='cd ~/Documents/blogg/'
 alias obss='cd /home/mat/Documents/obsidian_setup'
 alias pics='cd /home/mat/Pictures/onePlis_Camera/Camera'
+alias lj='lazyjournal'
 
 # edit configs
 alias edfish='vim /home/mat/.config/fish/config.fish; source /home/mat/.config/fish/config.fish'
+alias edbash='vim /home/mat/.bashrc; source /home/mat/.bashrc'
+
+
 alias edkitty='vim .config/kitty/kitty.conf; kitty @ load-config'
 alias edhk='vim /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh; /home/mat/Documents/ProgramExperiments/.setup/keybinds.sh'
 
@@ -58,9 +72,12 @@ fish_add_path -g /usr/local/go/bin
 fish_add_path -g ~/.local/bin/
 
 # editor
-set -gx EDITOR "nvim"
+set -gx EDITOR nvim
 
-if [ -f '/home/mat/google-cloud-sdk/path.fish.inc' ]; . '/home/mat/google-cloud-sdk/path.fish.inc'; end
+if [ -f '/home/mat/google-cloud-sdk/path.fish.inc' ]
+    . '/home/mat/google-cloud-sdk/path.fish.inc'
+end
 set -gx PATH /usr/local/go/bin $PATH
 alias newest='ls -t | head -1'
 
+#set -gx MANPAGER 'nvim +Man!'
